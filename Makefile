@@ -40,11 +40,11 @@ include $(DEVKITPRO)/libnx/switch_rules
 APP_AUTHOR	:=	haiz
 APP_VERSION	:=	0.1
 
-TARGET		:=	nxsh-$(APP_VERSION)
+TARGET		:=	nxsh
 BUILD		:=	build
-SOURCES		:=	src
+SOURCES		:=	src src/utils src/nxbsh
 DATA		:=	data
-INCLUDES	:=	include
+INCLUDES	:=	include include/utils include/nxbsh
 #ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
