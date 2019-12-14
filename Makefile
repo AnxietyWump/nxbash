@@ -40,7 +40,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 APP_AUTHOR	:=	haiz
 APP_VERSION	:=	0.1
 
-TARGET		:=	nxsh
+TARGET		:=	nxsh-$(APP_VERSION)
 BUILD		:=	build
 SOURCES		:=	src
 DATA		:=	data
