@@ -1,2 +1,2 @@
-# nxwsh
-The same sounds cool. A homebrew utility app that allows the use of a bash shell, and more.
+# nxsh
+A Nintendo Switch homebrew app that allows the use of a terminal over telnet and ssh, as well as natively through the switch itself.
