@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <checks.h>
-
+#include <nxsh.h>
 #include <switch.h>
 
 #define NXSH_VERSION "0.1"
@@ -44,35 +44,13 @@ int main(int arc, char **argv) {
           swkbdConfigSetGuideText(&kbd, "Type your command and press OK");
 
           rc = swkbdShow(&kbd, ostr, sizeof(ostr));
-          rc = setsysInitialize();
-
-          rc = setsysGetFirmwareVersion(&fwv);
-          if(R_FAILED(rc)) {
-            printf("0x%x\n", rc);
-          }
 
           if(strcmp(ostr, "neofetch") == 0) {
-            char cfw[] = "Atmosphere";
-            
-            if(isAtmosphere() == true) {
-              strcpy(cfw, "Atmosphere");
-            } else if(isReiNX() == true) {
-              strcpy(cfw, "ReiNX");
-            } else if(isSXOS() == true) {
-              strcpy(cfw, "SXOS");
-            }
-
-            printf("root@switch\n");
-            printf("-----------\n");
-            printf("OS: %s\n", cfw);
-            printf("Firmware: %s\n", fwv.display_version);
-            printf("Shell: nxsh 1.0\n");
-            printf("Memory Usage: %d\n", InfoType_UsedMemorySize);
+            neofetch();
           }
         }
 
       }
-
 
     	consoleUpdate(NULL);
   }
