@@ -4,7 +4,7 @@
 
 #include <switch.h>
 
-#define NXWSH_VERSION 1
+#define NXWSH_VERSION "0.1"
 
 int main(int arc, char **argv) {
 	
@@ -18,7 +18,7 @@ int main(int arc, char **argv) {
   	printf("/_/ /_/_/|_/____/_/ /_/ \n\n");
     printf("\033[0m");
     printf("===================================\n");
-    printf("Welcome to nxwsh v%d - Press + to exit\n", NXWSH_VERSION);
+    printf("Welcome to nxwsh v%s - Press + to exit\n", NXWSH_VERSION);
     printf("===================================\n\n");
 
     printf("root@switch:sdmc/");
