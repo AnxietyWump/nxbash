@@ -1,15 +1,15 @@
 #include <iostream>
 #include <switch.h>
+#include <ui/ui.hpp>
 
 #define NXSH_VERSION "0.1"
 
 using namespace std;
 
 int main(int argc, char **argv) {
-	consoleInit(NULL);
+	UI ui;
 
-	cout << "test gamer" << endl;
-
+	ui.UI();
 	while(appletMainLoop()) {
 
     	hidScanInput();
@@ -18,9 +18,9 @@ int main(int argc, char **argv) {
 
     	if(kDown & KEY_PLUS) break;
 
-    	consoleUpdate(NULL);
     }
 
-    consoleExit(NULL);
+    ui.~UI();
+
     return 0;
 }
