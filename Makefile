@@ -42,9 +42,9 @@ APP_VERSION	:=	0.1
 
 TARGET		:=	nxsh
 BUILD		:=	build
-SOURCES		:=	src src/utils src/nxbsh
+SOURCES		:=	src 
 DATA		:=	data
-INCLUDES	:=	include include/utils include/nxbsh
+INCLUDES	:=	include 
 #ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
