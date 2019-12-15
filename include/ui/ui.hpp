@@ -10,6 +10,6 @@ class UI {
 		~UI();
 
 	private:
-		SDL_Window *mwindow;
-		SDL_Renderer *mrenderer;
+		SDL_Window *window;
+		SDL_Renderer *renderer;
 };
