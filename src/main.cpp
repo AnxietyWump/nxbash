@@ -7,9 +7,9 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-	UI ui;
+	
+	UI u;
 
-	ui.UI();
 	while(appletMainLoop()) {
 
     	hidScanInput();
@@ -19,8 +19,6 @@ int main(int argc, char **argv) {
     	if(kDown & KEY_PLUS) break;
 
     }
-
-    ui.~UI();
 
     return 0;
 }
