@@ -40,12 +40,12 @@ include $(DEVKITPRO)/libnx/switch_rules
 APP_AUTHOR	:=	haiz
 APP_VERSION	:=	0.1
 
-TARGET		:=	nxsh
+TARGET		:=	nxbash
 BUILD		:=	build
 SOURCES		:=	src src/ui
 DATA		:=	data
 INCLUDES	:=	include include/ui
-#ROMFS	:=	romfs
+ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
 # options for code generation
