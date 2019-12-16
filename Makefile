@@ -42,10 +42,10 @@ APP_VERSION	:=	0.1
 
 TARGET		:=	nxbash
 BUILD		:=	build
-SOURCES		:=	src src/ui
+SOURCES		:=	src
 DATA		:=	data
-INCLUDES	:=	include include/ui
-ROMFS	:=	romfs
+INCLUDES	:=	include
+#ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
 # options for code generation
